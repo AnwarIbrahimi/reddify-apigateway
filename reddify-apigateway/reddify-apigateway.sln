@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reddify-apigateway", "reddify-apigateway.csproj", "{6BBA6B68-B24B-4895-B183-F0036114769D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BBA6B68-B24B-4895-B183-F0036114769D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BBA6B68-B24B-4895-B183-F0036114769D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BBA6B68-B24B-4895-B183-F0036114769D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BBA6B68-B24B-4895-B183-F0036114769D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06A413CE-2A6B-42CF-90BB-25AE8942D5BC}
+	EndGlobalSection
+EndGlobal
