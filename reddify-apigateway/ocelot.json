@@ -11,6 +11,18 @@
       ],
       "UpstreamPathTemplate": "/api/Contents{catchAll}",
       "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Users{catchAll}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
     }
   ]
 }
