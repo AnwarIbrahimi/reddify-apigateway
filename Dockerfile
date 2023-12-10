@@ -12,7 +12,7 @@ RUN dotnet restore ./reddify-apigateway/reddify-apigateway.csproj
 COPY . ./
 
 # Build the application
-RUN dotnet publish -c Release -o out
+RUN dotnet publish ./reddify-apigateway/reddify-apigateway.csproj -c Release -o out
 
 # Use the official .NET runtime image as the final base image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
