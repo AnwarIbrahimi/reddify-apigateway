@@ -28,7 +28,7 @@ jobs:
       run: dotnet build ./reddify-apigateway/reddify-apigateway.csproj --no-restore
 
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./reddify-apigateway/reddify-apigateway.csproj --no-build --verbosity normal
 
     - name: Build and push Docker image
       run: |
