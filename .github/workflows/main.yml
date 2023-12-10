@@ -22,10 +22,10 @@ jobs:
         dotnet-version: 6.0.x
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./reddify-apigateway/reddify-apigateway.csproj
 
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./reddify-apigateway/reddify-apigateway.csproj --no-restore
 
     - name: Test
       run: dotnet test --no-build --verbosity normal
