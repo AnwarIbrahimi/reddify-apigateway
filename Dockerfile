@@ -3,6 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 
 # Set the working directory inside the container
 WORKDIR /app
+EXPOSE 80
 
 # Copy the project file and restore dependencies
 COPY reddify-apigateway/*.csproj ./reddify-apigateway/
