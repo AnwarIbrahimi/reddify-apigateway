@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7203
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Contents{catchAll}",
@@ -18,7 +18,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7007
+          "Port": 8079
         }
       ],
       "UpstreamPathTemplate": "/api/Users{catchAll}",
