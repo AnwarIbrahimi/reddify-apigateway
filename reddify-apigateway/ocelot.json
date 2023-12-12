@@ -1,27 +1,27 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Contents{catchAll}",
+      "DownstreamPathTemplate": "/api/contents{catchAll}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 8080
+          "Host": "content-service",
+          "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/api/Contents{catchAll}",
+      "UpstreamPathTemplate": "/api/contents{catchAll}",
       "UpstreamHttpMethod": [ "GET", "POST" ]
     },
     {
-      "DownstreamPathTemplate": "/api/Users{catchAll}",
+      "DownstreamPathTemplate": "/api/users{catchAll}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 8079
+          "Host": "user-service",
+          "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/api/Users{catchAll}",
+      "UpstreamPathTemplate": "/api/users{catchAll}",
       "UpstreamHttpMethod": [ "GET", "POST" ]
     }
   ]

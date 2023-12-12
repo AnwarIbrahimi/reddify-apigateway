@@ -1,0 +1,19 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reddify-apigateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: reddify-apigateway
+  template:
+    metadata:
+      labels:
+        app: reddify-apigateway
+    spec:
+      containers:
+      - name: reddify-apigateway
+        image: anwarict/apigateway:latest
+        ports:
+        - containerPort: 80
