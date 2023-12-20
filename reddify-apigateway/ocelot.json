@@ -1,18 +1,6 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/user{catchAll}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "user-service",
-          "Port": 5117
-        }
-      ],
-      "UpstreamPathTemplate": "/api/user{catchAll}",
-      "UpstreamHttpMethod": [ "GET", "POST" ]
-    },
-    {
       "DownstreamPathTemplate": "/api/contents{catchAll}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -25,7 +13,7 @@
       "UpstreamHttpMethod": [ "GET", "POST" ]
     },
     {
-      "DownstreamPathTemplate": "/swagger/{*path}",
+      "DownstreamPathTemplate": "/api/user{catchAll}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -33,31 +21,7 @@
           "Port": 5117
         }
       ],
-      "UpstreamPathTemplate": "/swagger/{*path}",
-      "UpstreamHttpMethod": [ "GET", "POST" ]
-    },
-    {
-      "DownstreamPathTemplate": "/swagger/contents/{*path}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "content-service",
-          "Port": 5117
-        }
-      ],
-      "UpstreamPathTemplate": "/swagger/contents/{*path}",
-      "UpstreamHttpMethod": [ "GET", "POST" ]
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "content-service",
-          "Port": 5117
-        }
-      ],
-      "UpstreamPathTemplate": "/",
+      "UpstreamPathTemplate": "/api/user{catchAll}",
       "UpstreamHttpMethod": [ "GET", "POST" ]
     }
   ]
