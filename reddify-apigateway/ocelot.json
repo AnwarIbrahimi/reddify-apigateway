@@ -18,7 +18,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "user-service",
-          "Port": 5117
+          "Port": 5118
         }
       ],
       "UpstreamPathTemplate": "/api/user{catchAll}",

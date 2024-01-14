@@ -29,6 +29,6 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t anwarict/apisgatewayy .
+        docker build -t anwarict/apisgatewayyy .
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-        docker push anwarict/apisgatewayy:latest
+        docker push anwarict/apisgatewayyy:latest
