@@ -22,7 +22,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/user{catchAll}",
-      "UpstreamHttpMethod": [ "GET", "POST" ]
+      "UpstreamHttpMethod": [ "GET", "POST", "DELETE" ]
     }
   ]
 }
